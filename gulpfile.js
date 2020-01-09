@@ -5,12 +5,12 @@ let
 
 
 gulp.task("default", function() {
- gulp.src('./src')
+ gulp.src('./docs')
  .pipe(server({
 	 livereload:true,
 	 directoryListing:{
 		 enable:true,
-		 path:'./src'
+		 path:'./docs'
 	 },
 	 open:false,
  }));
