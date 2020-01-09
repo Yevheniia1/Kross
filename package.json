@@ -20,7 +20,7 @@
   },
   "scripts": {
     "test": "echo \"Error:npm i --save-dev gulp-sass no test specified\" && exit 1",
-    "scss": "node-sass --watch docs/scss -o docs/style"
+    "scss": "node-sass --watch docs/scss/style.scss -o docs/style/style.css"
   },
   "author": "Potiichuk Yevheniia",
   "license": "ISC"

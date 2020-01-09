@@ -1,0 +1,8 @@
+body {
+	font-size: $font-size--base;
+	margin: 0;
+}
+
+.section-title {
+	@include font($black, $font-size--xl, $font-title, bold);
+}
