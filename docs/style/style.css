@@ -1,15 +1,113 @@
+.header--home .navigation {
+  display: flex;
+  justify-content: space-between; }
+
+.header--home .social-list li a:before {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); }
+
 body {
   font-size: 22px;
   margin: 0; }
+
+.visually-hidden:not(:focus):not(:active) {
+  width: 1px;
+  height: 1px;
+  margin: 1px;
+  padding: 0;
+  border: 0;
+  position: absolute;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
 
 .section-title {
   font: normal bold 80px "Poppins", sans-serif;
   color: #000000; }
 
+.container {
+  margin: 0 auto; }
+
 .header--home {
-  min-height: 39.31818em;
   overflow: hidden;
   background-image: url(../imgs/home/bg-header.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; }
+  .header--home .container {
+    width: 91.25%;
+    max-width: 1460px;
+    min-height: 865px;
+    position: relative; }
+  .header--home .navigation {
+    padding: 1.81818em 1.81818em 0; }
+  .header--home .logo {
+    color: #000000;
+    text-decoration: none;
+    font: normal 700 2.27273em "Oswald", sans-serif;
+    color: #ffffff; }
+  .header--home .navigation__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: flex-end; }
+    .header--home .navigation__list li a {
+      padding-left: 1.36364em;
+      padding-right: 1.36364em;
+      height: 100%;
+      color: #000000;
+      text-decoration: none;
+      display: block;
+      font-family: "Playfair Display", serif;
+      color: #ffffff;
+      font-size: 0.81818em;
+      text-transform: uppercase;
+      line-height: 2.3; }
+      .header--home .navigation__list li a[disabled] {
+        font-weight: 700; }
+  .header--home .title {
+    margin: 0 0 0 3.0625em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font: normal 400 3.63636em "Poppins", sans-serif;
+    color: #ffffff;
+    line-height: 1.4; }
+  .header--home .social-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    bottom: 2.5em;
+    left: 0; }
+    .header--home .social-list li {
+      position: relative;
+      width: 42px;
+      height: 42px; }
+    .header--home .social-list li a:before {
+      content: "";
+      width: 100%;
+      height: 100%; }
+    .header--home .social-list li a[title="Facebook"]:before {
+      background-image: url("../imgs/icons/social/Facebook.png");
+      background-repeat: no-repeat;
+      background-size: auto 16px;
+      background-position: center center; }
+    .header--home .social-list li a[title="Instagram"]:before {
+      background-image: url("../imgs/icons/social/Instagram.png");
+      background-repeat: no-repeat;
+      background-size: auto 16px;
+      background-position: center center; }
+    .header--home .social-list li a[title="Dribbble"]:before {
+      background-image: url("../imgs/icons/social/Dribbble.png");
+      background-repeat: no-repeat;
+      background-size: auto 16px;
+      background-position: center center; }
+    .header--home .social-list li a[title="Behance"]:before {
+      background-image: url("../imgs/icons/social/Behance.png");
+      background-repeat: no-repeat;
+      background-size: auto 16px;
+      background-position: center center; }

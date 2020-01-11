@@ -38,9 +38,7 @@
 
 @mixin horizontal-list {
     @include reset-list;
-    li {
-        display: flex;
-    }
+    display: flex;
 }
 
 //Size

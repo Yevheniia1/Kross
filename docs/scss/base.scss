@@ -3,6 +3,23 @@ body {
 	margin: 0;
 }
 
+.visually-hidden:not(:focus):not(:active) {
+	width: 1px;
+	height: 1px;
+	margin: 1px;
+	padding: 0;
+	border: 0;
+
+	position: absolute;
+	white-space: nowrap;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
 .section-title {
 	@include font($black, $font-size--xl, $font-title, bold);
+}
+
+.container {
+	margin: 0 auto;
 }

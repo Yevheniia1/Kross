@@ -1,8 +1,91 @@
+
+
 .header--home {
-    min-height: em(865px);
     overflow: hidden;
 
     background-image: url(../imgs/home/bg-header.png);
     @include bg-image(cover);
 
+    .container {
+        width: 91.25%;
+        max-width: 1460px;
+        min-height: 865px;
+
+        position: relative;
+    }
+
+    .navigation {
+        padding: em(40px) em(40px) 0;
+
+        @extend %flex-sb;
+    }
+
+    .logo {
+        @include reset-link;
+        @include font($white, em(50px), $font-logo, 700);
+    }
+
+    .navigation__list {
+        @include horizontal-list;
+        align-items: flex-end;
+
+        li a {
+            padding-left: em(30px);
+            padding-right: em(30px);
+            height: 100%;
+        
+            @include reset-link;
+            display: block;
+
+            @include font--primary($white, em($font-size--s));
+            text-transform: uppercase;
+            line-height: 2.3;
+
+            &[disabled] {
+                font-weight: 700;
+            }
+        }
+    }
+
+    .title {
+        $font-size: $font-size--xl;
+
+        margin: 0 0 0 em(245px, $font-size);
+
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+
+        @include font($white, em($font-size), $font-title);
+        line-height: 1.4;
+    }
+
+    .social-list {
+        @include reset-list;
+        position: absolute;
+        bottom: em(55px);
+        left: 0;
+
+        li {
+            position: relative;
+            @include size(42px, 42px)
+        }
+
+        li a:before {
+            content: "";
+            @extend %position-absolute-center;
+            @include size(100%, 100%);
+        }
+
+        //Иконки для соцсетей
+        $img: "imgs/icons/social";
+        $list: (Facebook, Instagram, Dribbble, Behance);
+
+        @each $title in $list {
+            li a[title = "#{$title}"]:before {
+                background-image: url("../#{$img}/#{$title}.png");
+                @include bg-image(auto 16px)
+            }
+        }
+    }
 }
