@@ -3,25 +3,29 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {
-    "@glidejs/glide": "^3.4.1",
-    "gsap": "^2.1.3",
-    "gulp": "^4.0.2",
-    "gulp-concat": "^2.6.1",
-    "gulp-server-livereload": "^1.9.2",
-    "node-sass": "^4.13.0",
-    "normalize.css": "^8.0.1",
-    "scrollmagic": "^2.0.7",
-    "slick-carousel": "^1.8.1"
-  },
-  "devDependencies": {
-    "@types/gsap": "^1.20.2",
-    "gulp-uglify": "^3.0.2"
+  "directories": {
+    "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error:npm i --save-dev gulp-sass no test specified\" && exit 1",
-    "scss": "node-sass --watch docs/scss/style.scss -o docs/style/style.css"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch docs/scss/style.scss -o docs/style"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yevheniia1/Kross.git"
   },
   "author": "Potiichuk Yevheniia",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yevheniia1/Kross/issues"
+  },
+  "homepage": "https://github.com/Yevheniia1/Kross#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-server-livereload": "^1.9.2"
+  },
+  "dependencies": {
+    "node-sass": "^4.13.0",
+    "normalize.css": "^8.0.1"
+  }
 }

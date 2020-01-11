@@ -1,0 +1,8 @@
+.header--home {
+    min-height: em(865px);
+    overflow: hidden;
+
+    background-image: url(../imgs/home/bg-header.png);
+    @include bg-image(cover);
+
+}
