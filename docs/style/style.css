@@ -181,6 +181,59 @@ body {
     line-height: 3.2;
     text-align: center; }
 
+.experience {
+  margin: 7.72727em auto 0;
+  width: 73.13%; }
+  .experience .experience__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    margin-top: 2.27273em;
+    justify-content: space-between; }
+    .experience .experience__list .description:before {
+      content: "";
+      display: block;
+      margin: 0 auto;
+      width: 5.90909em;
+      height: 5.90909em; }
+    .experience .experience__list div[data-company="webex"]:before {
+      background-image: url("../imgs/icons/experience/webex.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center; }
+    .experience .experience__list div[data-company="augmedix"]:before {
+      background-image: url("../imgs/icons/experience/augmedix.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center; }
+    .experience .experience__list div[data-company="themefisher"]:before {
+      background-image: url("../imgs/icons/experience/themefisher.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center; }
+    .experience .experience__list .description .date {
+      margin: 0;
+      font: normal 400 0.81818em "Roboto", sans-serif;
+      color: #000000;
+      line-height: 2;
+      text-align: center; }
+    .experience .experience__list .description .position {
+      margin: 0;
+      font-family: "Playfair Display", serif;
+      color: #000000;
+      font-size: 22px;
+      line-height: 2;
+      text-align: center; }
+    .experience .experience__list .description .company {
+      margin: 0;
+      font-family: "Playfair Display", serif;
+      color: #999999;
+      font-size: 22px;
+      text-transform: uppercase;
+      text-align: center;
+      line-height: 2; }
+
 .leaf-1, .leaf-2, .leaf-3, .leaf-4, .leaf-5, .leaf-6, .drops-1, .drops-2 {
   position: absolute;
   height: auto;

@@ -179,3 +179,56 @@
    }
 }
 
+.experience {
+    margin: em(170px) auto 0;
+    width: 73.13%;
+
+    .experience__list {
+        @include horizontal-list;
+
+        margin-top: em(50px);
+        justify-content: space-between;
+
+        .description:before {
+            content: "";
+            display: block;
+            margin: 0 auto;
+            @include size(em(130px), em(130px));
+        }
+
+        $companies: (webex, augmedix, themefisher);
+        $src: "../imgs/icons/experience";
+
+        @each $company in $companies {
+            div[data-company = "#{$company}"]:before {
+                background-image: url("#{$src}/#{$company}.png");
+                @include bg-image(cover);
+            }
+        }
+
+        .description .date {
+            margin: 0;
+
+            @include font($black, em($font-size--s), $font-description);
+            line-height: 2;
+            text-align: center;
+        }
+
+        .description .position {
+            margin: 0;
+
+            @include font--primary;
+            line-height: 2;
+            text-align: center;
+        }
+
+        .description .company {
+            margin: 0;
+
+            @include font--primary($gray);
+            text-transform: uppercase;
+            text-align: center;
+            line-height: 2;
+        }
+    }
+}
