@@ -111,3 +111,51 @@ body {
       background-repeat: no-repeat;
       background-size: auto 16px;
       background-position: center center; }
+
+.about {
+  position: relative; }
+
+.leaf-1, .leaf-2, .leaf-3, .leaf-4, .leaf-5, .leaf-6, .drops-1, .drops-2 {
+  position: absolute;
+  height: auto;
+  z-index: 0; }
+
+.header--home .decoration .drops-1 {
+  width: 9.0411%;
+  top: 21.96532%;
+  right: 31.16438%; }
+
+.header--home .decoration .drops-2 {
+  width: 6.0274%;
+  bottom: 13.87283%;
+  left: 26.71233%; }
+
+.header--home .decoration .leaf-1 {
+  width: 35.34247%;
+  top: 17.91908%;
+  left: -24.65753%; }
+
+.header--home .decoration .leaf-2 {
+  width: 4.93151%;
+  top: 22.54335%;
+  left: 45.20548%; }
+
+.header--home .decoration .leaf-3 {
+  width: 23.69863%;
+  top: 13.2948%;
+  right: -18.49315%; }
+
+.header--home .decoration .leaf-5 {
+  width: 5.75342%;
+  bottom: 19.65318%;
+  right: 31.50685%; }
+
+.header--home .decoration .leaf-6 {
+  width: 11.64384%;
+  bottom: 16.76301%;
+  right: -6.84932%; }
+
+.about .leaf-4 {
+  width: 11.57534%;
+  top: -17.34104%;
+  left: 1.0274%; }

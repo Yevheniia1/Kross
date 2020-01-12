@@ -1,0 +1,75 @@
+$start-width-layout: parse-int(1460px);
+$start-height-layout: parse-int(865px);
+
+@function percentage-height-calculation($px) {
+    @return (parse-int($px) * 100 / $start-height-layout) * 1%;
+}
+
+@function percentage-width-calculation($px) {
+    @return (parse-int($px) * 100 / $start-width-layout) * 1%;
+}
+
+@mixin width-decoration($px) {
+    width: percentage-width-calculation($px);
+}
+
+.leaf-1, .leaf-2, .leaf-3, .leaf-4, .leaf-5, .leaf-6, .drops-1, .drops-2 {
+    position: absolute;
+    height: auto;
+    z-index: 0;
+}
+
+.header--home .decoration {
+
+    .drops-1 {
+        @include width-decoration(132px);
+        top: percentage-height-calculation(190px);
+        right: percentage-width-calculation(455px);
+    }
+
+    .drops-2 {
+        @include width-decoration(88px);
+        bottom: percentage-height-calculation(120px);
+        left: percentage-width-calculation(390px);
+    }
+
+    .leaf-1 {
+        @include width-decoration(516px);
+        top: percentage-height-calculation(155px);
+        left: percentage-width-calculation(-360px);
+    }
+
+    .leaf-2 {
+        @include width-decoration(72px);
+        top: percentage-height-calculation(195px);
+        left: percentage-width-calculation(660px);
+    }
+
+    .leaf-3 {
+        @include width-decoration(346px);
+        top: percentage-height-calculation(115px);
+        right: percentage-width-calculation(-270px);
+    }
+
+    .leaf-5 {
+        @include width-decoration(84px);
+        bottom: percentage-height-calculation(170px);
+        right: percentage-width-calculation(460px);
+    }
+
+    .leaf-6 {
+        @include width-decoration(170px);
+        bottom: percentage-height-calculation(145px);
+        right: percentage-width-calculation(-100px);
+    }
+
+    
+}
+
+.about {
+    .leaf-4 {
+        @include width-decoration(169px);
+        top: percentage-height-calculation(-150px);
+        left: percentage-width-calculation(15px);
+    }
+}
