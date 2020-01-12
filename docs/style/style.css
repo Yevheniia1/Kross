@@ -142,7 +142,44 @@ body {
     line-height: 2; }
 
 .skills {
-  margin-top: 5.90909em; }
+  margin: 5.90909em auto 0;
+  width: 73.13%; }
+  .skills .skills__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    margin-top: 4.09091em;
+    justify-content: space-between; }
+    .skills .skills__list li {
+      width: 23%;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      border-radius: 5px;
+      box-shadow: 0px 59px 39.1px 6.9px rgba(224, 241, 255, 0.34); }
+  .skills .img__wrapp {
+    height: 7.04545em;
+    position: relative;
+    overflow: hidden; }
+    .skills .img__wrapp img {
+      width: 100%;
+      position: absolute;
+      bottom: 0; }
+  .skills .violet {
+    background-color: rgba(65, 34, 142, 0.05); }
+  .skills .turquoise {
+    background-color: rgba(63, 248, 246, 0.05); }
+  .skills .orange {
+    background-color: rgba(255, 160, 48, 0.05); }
+  .skills .skills__title {
+    margin: 0;
+    font-family: "Playfair Display", serif;
+    color: #000000;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 3.2;
+    text-align: center; }
 
 .leaf-1, .leaf-2, .leaf-3, .leaf-4, .leaf-5, .leaf-6, .drops-1, .drops-2 {
   position: absolute;

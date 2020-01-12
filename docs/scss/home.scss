@@ -120,5 +120,62 @@
 }
 
 .skills {
-    margin-top: em(130px);
+    margin: em(130px) auto 0;
+    width: 73.13%;
+
+    .skills__list {
+        @include horizontal-list;
+        margin-top: em(90px);
+        justify-content: space-between;
+
+        li {
+            width: 23%;
+
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+
+            border-radius: $border-radius--s;
+            box-shadow: 0px 59px 39.1px 6.9px rgba(224, 241, 255, 0.34);
+
+        }
+    }
+
+    .img__wrapp {
+        height: em(155px);
+        position: relative;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+        }
+    }
+
+   @mixin bg-color-item ($color) {
+    background-color: rgba($color: $color, $alpha: .05);
+   }
+
+   .violet {
+       @include bg-color-item($violet);
+   }
+
+   .turquoise {
+       @include bg-color-item($turquoise);
+   }
+
+   .orange {
+       @include bg-color-item($orange);
+   }
+
+   .skills__title {
+       margin: 0;
+
+       @include font--primary;
+       font-weight: 400;
+       line-height: 3.2;
+       text-align: center;
+   }
 }
+
