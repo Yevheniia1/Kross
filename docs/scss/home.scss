@@ -13,8 +13,12 @@
     }
 
     .navigation {
-        padding: em(40px) em(40px) 0;
+        width: 100%;
+        padding: em(30px) em(40px) 0;
+        box-sizing: border-box;
 
+        position: absolute;
+        top: 0;
         @extend %flex-sb;
     }
 
@@ -48,7 +52,7 @@
     .title {
         $font-size: $font-size--xl;
 
-        margin: 0 0 0 em(245px, $font-size);
+        margin: 0 0 0 15.3%;
 
         position: absolute;
         top: 50%;
@@ -89,5 +93,32 @@
 }
 
 .about {
+    width: 73.13%;
+    margin: 0 auto;
+
+    padding-top: em(75px);
     position: relative;
+
+    .description {
+        margin: 0;
+        @include font--primary;
+        line-height: 1.64;
+        text-align: center;
+    }
+
+    .button {
+        margin-top: em(30px);
+
+        @include reset-link;
+        display: block;
+
+        @include font($violet, em($font-size--s), $font-primary, 700);
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 2;
+    }
+}
+
+.skills {
+    margin-top: em(130px);
 }

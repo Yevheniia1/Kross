@@ -17,7 +17,9 @@ body {
 }
 
 .section-title {
+	margin: 0;
 	@include font($black, $font-size--xl, $font-title, bold);
+	text-align: center;
 }
 
 .container {

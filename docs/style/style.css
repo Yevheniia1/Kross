@@ -24,8 +24,10 @@ body {
   overflow: hidden; }
 
 .section-title {
+  margin: 0;
   font: normal bold 80px "Poppins", sans-serif;
-  color: #000000; }
+  color: #000000;
+  text-align: center; }
 
 .container {
   margin: 0 auto; }
@@ -42,7 +44,11 @@ body {
     min-height: 865px;
     position: relative; }
   .header--home .navigation {
-    padding: 1.81818em 1.81818em 0; }
+    width: 100%;
+    padding: 1.36364em 1.81818em 0;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0; }
   .header--home .logo {
     color: #000000;
     text-decoration: none;
@@ -69,7 +75,7 @@ body {
       .header--home .navigation__list li a[disabled] {
         font-weight: 700; }
   .header--home .title {
-    margin: 0 0 0 3.0625em;
+    margin: 0 0 0 15.3%;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -113,7 +119,30 @@ body {
       background-position: center center; }
 
 .about {
+  width: 73.13%;
+  margin: 0 auto;
+  padding-top: 3.40909em;
   position: relative; }
+  .about .description {
+    margin: 0;
+    font-family: "Playfair Display", serif;
+    color: #000000;
+    font-size: 22px;
+    line-height: 1.64;
+    text-align: center; }
+  .about .button {
+    margin-top: 1.36364em;
+    color: #000000;
+    text-decoration: none;
+    display: block;
+    font: normal 700 0.81818em "Playfair Display", serif;
+    color: #41228e;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 2; }
+
+.skills {
+  margin-top: 5.90909em; }
 
 .leaf-1, .leaf-2, .leaf-3, .leaf-4, .leaf-5, .leaf-6, .drops-1, .drops-2 {
   position: absolute;
