@@ -54,7 +54,7 @@
 .about {
     .leaf-4 {
         @include header-elem-width--pc(169px);
-        top: calculate-size--pc(-150px, $header-container-height);
-        left: calculate-size--pc(15px, $header-container-width);
+        top: calculation-size--pc(-150px, $header-container-height);
+        left: calculation-size--pc(15px, $header-container-width);
     }
 }

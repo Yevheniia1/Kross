@@ -297,3 +297,74 @@
         }
     }
 }
+
+.services {
+    @include container;
+    margin-top: em(75px);
+
+    .services__list {
+        @include horizontal-list;
+        justify-content: space-between;
+        align-items: stretch;
+        margin-top: em(75px);
+
+        li {
+            width: 30%;
+            box-sizing: border-box;
+            padding: em(90px) em(40px) em(50px);
+
+            border-radius: $border-radius--s;
+            background-color: $white;
+
+            transition-duration: $transition-duration--base;
+            cursor: pointer;
+
+            &:before {
+                content: "";
+                display: block;
+                height: em(40px);
+                margin-bottom: em(50px);
+
+                @include bg-image(auto);
+            }
+
+            //иконки
+            @each $num in (1, 2, 3) {
+                &:nth-child(#{$num})::before{
+                    background-image: url(../imgs/icons/services/service#{$num}.png);
+                }
+            }
+
+            &:hover {
+                background-color: $violet;
+                box-shadow: 0px 59px 39.1px 6.9px rgba(224, 241, 255, 0.34);
+                transition-duration: $transition-duration--base;
+                
+                .title {
+                    color: $white;
+                    transition-duration: $transition-duration--base;
+                }
+
+                .description {
+                    color: rgba($color: $white, $alpha: .5);
+                    transition-duration: $transition-duration--base;
+                }
+            }
+        }
+
+        .title {
+            margin: 0;
+            @include font--primary;
+            text-align: center;
+            transition-duration: $transition-duration--base;
+        }
+
+        .description {
+            margin: em(20px) 0;
+            @include font--description(rgba($color: $black, $alpha: .5));
+            text-align: center;
+            line-height: 1.9;
+            transition-duration: $transition-duration--base;
+        }
+    }
+}

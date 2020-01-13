@@ -296,6 +296,67 @@ body {
       font-size: 18px;
       line-height: 2; }
 
+.services {
+  width: 73.125%;
+  max-width: 1170px;
+  margin: 0 auto;
+  margin-top: 3.40909em; }
+  .services .services__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-top: 3.40909em; }
+    .services .services__list li {
+      width: 30%;
+      box-sizing: border-box;
+      padding: 4.09091em 1.81818em 2.27273em;
+      border-radius: 5px;
+      background-color: #ffffff;
+      transition-duration: 0.5s;
+      cursor: pointer; }
+      .services .services__list li:before {
+        content: "";
+        display: block;
+        height: 1.81818em;
+        margin-bottom: 2.27273em;
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: center center; }
+      .services .services__list li:nth-child(1)::before {
+        background-image: url(../imgs/icons/services/service1.png); }
+      .services .services__list li:nth-child(2)::before {
+        background-image: url(../imgs/icons/services/service2.png); }
+      .services .services__list li:nth-child(3)::before {
+        background-image: url(../imgs/icons/services/service3.png); }
+      .services .services__list li:hover {
+        background-color: #41228e;
+        box-shadow: 0px 59px 39.1px 6.9px rgba(224, 241, 255, 0.34);
+        transition-duration: 0.5s; }
+        .services .services__list li:hover .title {
+          color: #ffffff;
+          transition-duration: 0.5s; }
+        .services .services__list li:hover .description {
+          color: rgba(255, 255, 255, 0.5);
+          transition-duration: 0.5s; }
+    .services .services__list .title {
+      margin: 0;
+      font-family: "Playfair Display", serif;
+      color: #000000;
+      font-size: 22px;
+      text-align: center;
+      transition-duration: 0.5s; }
+    .services .services__list .description {
+      margin: 0.90909em 0;
+      font-family: "Roboto", sans-serif;
+      color: rgba(0, 0, 0, 0.5);
+      font-size: 15px;
+      text-align: center;
+      line-height: 1.9;
+      transition-duration: 0.5s; }
+
 .leaf-1, .leaf-2, .leaf-3, .leaf-4, .leaf-5, .leaf-6, .drops-1, .drops-2 {
   position: absolute;
   height: auto;
@@ -338,5 +399,5 @@ body {
 
 .about .leaf-4 {
   width: calculate-size--pc(169px, 1460px);
-  top: calculate-size--pc(-150px, 865px);
-  left: calculate-size--pc(15px, 1460px); }
+  top: -17.34104%;
+  left: 1.0274%; }
