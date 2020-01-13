@@ -5,8 +5,7 @@
     @include bg-image(cover);
 
     .container {
-        width: 91.25%;
-        max-width: 1460px;
+        @include big-container;
         min-height: 865px;
 
         position: relative;
@@ -408,6 +407,85 @@
                 display: block;
                 object-fit: cover;
             }
+        }
+    }
+}
+
+.testimonials {
+    background-color:$violet;
+    background-image: url(../imgs/home/testimonials/background.png);
+    @include bg-image(auto 75%);
+    margin-top: em(170px);
+
+    .section-title {
+        color: $white;
+    }
+
+    .container {
+        @include big-container;
+        position: relative;
+        padding: em(105px) 0 em(60px);
+    }
+
+    .testimonials__slider {
+        @include container;
+        margin: em(40px) auto em(25px);
+    }
+
+    .testimonials__item {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 em(100px);
+
+        &:before {
+            content: "";
+            display: block;
+            margin: 0 auto;
+            @include size(em(70px), em(50px));
+            background-image: url(../imgs/icons/quote.png);
+            @include bg-image(contain);
+        }
+
+        .content {
+            margin: em(20px) 0 0; 
+            @include font--primary($white);
+            line-height: 1.5;
+            text-align-last: center;
+
+            span {
+                color: $turquoise;
+            }
+        }
+
+        img {
+            display: block;
+            margin: em(40px) auto 0;
+        }
+
+        .autor {
+            margin: em(10px) 0 em(25px);
+            @include font--primary($white);
+            text-align: center;
+
+            span {
+                @include font--primary(rgba($color: $white, $alpha: .5), $font-size--s);
+            }
+        }
+    }
+
+    .flickity-button {
+        display: none !important;
+    }
+
+    .flickity-page-dots .dot {
+        margin: 0 2px;
+        width: 12px;
+        height: 6px;
+        background: $white;
+        border-radius: 25%;
+
+        &.is-selected {
+            width: 25px;
         }
     }
 }

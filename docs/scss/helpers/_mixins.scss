@@ -59,11 +59,17 @@
 }
 
 @mixin header-elem-width--pc($px) {
-    width: calculate-size--pc($px, $header-container-width);
+    width: calculation-size--pc($px, $header-container-width);
 }
 
 @mixin container {
 	width: calculation-size--pc($container-width, $start-layout-width);
 	max-width: $container-width;
 	margin: 0 auto;
+}
+
+@mixin big-container {
+    width: calculation-size--pc($header-container-width, $start-layout-width);
+    max-width: $header-container-width;
+    margin: 0 auto;
 }

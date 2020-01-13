@@ -41,6 +41,7 @@ body {
   .header--home .container {
     width: 91.25%;
     max-width: 1460px;
+    margin: 0 auto;
     min-height: 865px;
     position: relative; }
   .header--home .navigation {
@@ -396,47 +397,139 @@ body {
         display: block;
         object-fit: cover; }
 
-.leaf-1, .leaf-2, .leaf-3, .leaf-4, .leaf-5, .leaf-6, .drops-1, .drops-2 {
+.testimonials {
+  background-color: #41228e;
+  background-image: url(../imgs/home/testimonials/background.png);
+  background-repeat: no-repeat;
+  background-size: auto 75%;
+  background-position: center center;
+  margin-top: 7.72727em; }
+  .testimonials .section-title {
+    color: #ffffff; }
+  .testimonials .container {
+    width: 91.25%;
+    max-width: 1460px;
+    margin: 0 auto;
+    position: relative;
+    padding: 4.77273em 0 2.72727em; }
+  .testimonials .testimonials__slider {
+    width: 73.125%;
+    max-width: 1170px;
+    margin: 0 auto;
+    margin: 1.81818em auto 1.13636em; }
+  .testimonials .testimonials__item {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 4.54545em; }
+    .testimonials .testimonials__item:before {
+      content: "";
+      display: block;
+      margin: 0 auto;
+      width: 3.18182em;
+      height: 2.27273em;
+      background-image: url(../imgs/icons/quote.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center center; }
+    .testimonials .testimonials__item .content {
+      margin: 0.90909em 0 0;
+      font-family: "Playfair Display", serif;
+      color: #ffffff;
+      font-size: 22px;
+      line-height: 1.5;
+      text-align-last: center; }
+      .testimonials .testimonials__item .content span {
+        color: #3ff8f6; }
+    .testimonials .testimonials__item img {
+      display: block;
+      margin: 1.81818em auto 0; }
+    .testimonials .testimonials__item .autor {
+      margin: 0.45455em 0 1.13636em;
+      font-family: "Playfair Display", serif;
+      color: #ffffff;
+      font-size: 22px;
+      text-align: center; }
+      .testimonials .testimonials__item .autor span {
+        font-family: "Playfair Display", serif;
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 18px; }
+  .testimonials .flickity-button {
+    display: none !important; }
+  .testimonials .flickity-page-dots .dot {
+    margin: 0 2px;
+    width: 12px;
+    height: 6px;
+    background: #ffffff;
+    border-radius: 25%; }
+    .testimonials .flickity-page-dots .dot.is-selected {
+      width: 25px; }
+
+.leaf-1, .leaf-2, .leaf-3, .leaf-4, .leaf-5, .leaf-6, .dots-1, .dots-2, .dots-3, .dots-4 {
   position: absolute;
   height: auto;
   z-index: 0; }
 
-.header--home .decoration .drops-1 {
-  width: calculate-size--pc(132px, 1460px);
+.header--home .decoration .dots-1 {
+  width: 9.0411%;
   top: 21.96532%;
   right: 31.16438%; }
 
-.header--home .decoration .drops-2 {
-  width: calculate-size--pc(88px, 1460px);
+.header--home .decoration .dots-2 {
+  width: 6.0274%;
   bottom: 13.87283%;
   left: 26.71233%; }
 
 .header--home .decoration .leaf-1 {
-  width: calculate-size--pc(516px, 1460px);
+  width: 35.34247%;
   top: 17.91908%;
   left: -24.65753%; }
 
 .header--home .decoration .leaf-2 {
-  width: calculate-size--pc(72px, 1460px);
+  width: 4.93151%;
   top: 22.54335%;
   left: 45.20548%; }
 
 .header--home .decoration .leaf-3 {
-  width: calculate-size--pc(346px, 1460px);
+  width: 23.69863%;
   top: 13.2948%;
   right: -18.49315%; }
 
 .header--home .decoration .leaf-5 {
-  width: calculate-size--pc(84px, 1460px);
+  width: 5.75342%;
   bottom: 19.65318%;
   right: 31.50685%; }
 
 .header--home .decoration .leaf-6 {
-  width: calculate-size--pc(170px, 1460px);
+  width: 11.64384%;
   bottom: 16.76301%;
   right: -6.84932%; }
 
 .about .leaf-4 {
-  width: calculate-size--pc(169px, 1460px);
+  width: 11.57534%;
   top: -17.34104%;
   left: 1.0274%; }
+
+.testimonials .dots-3 {
+  width: 6.0274%;
+  top: -5.78035%;
+  left: 4.79452%; }
+
+.testimonials .dots-4 {
+  width: 6.0274%;
+  top: 24.27746%;
+  right: -1.36986%; }
+
+.testimonials .leaf-2 {
+  width: 4.93151%;
+  top: 5.20231%;
+  right: 11.64384%; }
+
+.testimonials .leaf-4 {
+  width: 11.57534%;
+  bottom: -4.62428%;
+  right: 8.21918%; }
+
+.testimonials .leaf-5 {
+  width: 5.75342%;
+  bottom: 20.80925%;
+  left: 4.45205%; }

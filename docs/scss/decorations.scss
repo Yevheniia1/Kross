@@ -1,4 +1,4 @@
-.leaf-1, .leaf-2, .leaf-3, .leaf-4, .leaf-5, .leaf-6, .drops-1, .drops-2 {
+.leaf-1, .leaf-2, .leaf-3, .leaf-4, .leaf-5, .leaf-6, .dots-1, .dots-2, .dots-3, .dots-4 {
     position: absolute;
     height: auto;
     z-index: 0;
@@ -6,13 +6,13 @@
 
 .header--home .decoration {
 
-    .drops-1 {
+    .dots-1 {
         @include header-elem-width--pc(132px);
         top: calculation-size--pc(190px, $header-container-height);
         right: calculation-size--pc(455px, $header-container-width);
     }
 
-    .drops-2 {
+    .dots-2 {
         @include header-elem-width--pc(88px);
         bottom: calculation-size--pc(120px, $header-container-height);
         left: calculation-size--pc(390px, $header-container-width);
@@ -56,5 +56,37 @@
         @include header-elem-width--pc(169px);
         top: calculation-size--pc(-150px, $header-container-height);
         left: calculation-size--pc(15px, $header-container-width);
+    }
+}
+
+.testimonials {
+    .dots-3 {
+        @include header-elem-width--pc(88px);
+        top: calculation-size--pc(-50px, $header-container-height);
+        left: calculation-size--pc(70px, $header-container-width);
+    }
+
+    .dots-4 {
+        @include header-elem-width--pc(88px);
+        top: calculation-size--pc(210px, $header-container-height);
+        right: calculation-size--pc(-20px, $header-container-width);
+    }
+
+    .leaf-2 {
+        @include header-elem-width--pc(72px);
+        top: calculation-size--pc(45px, $header-container-height);
+        right: calculation-size--pc(170px, $header-container-width);
+    }
+
+    .leaf-4 {
+        @include header-elem-width--pc(169px);
+        bottom: calculation-size--pc(-40px, $header-container-height);
+        right: calculation-size--pc(120px, $header-container-width);
+    }
+
+    .leaf-5 {
+        @include header-elem-width--pc(84px);
+        bottom: calculation-size--pc(180px, $header-container-height);
+        left: calculation-size--pc(65px, $header-container-width);
     }
 }

@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 
 	<link rel="stylesheet" href="./style/style.css" type="text/css">
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Lora:400,400i|Playfair+Display:400,700|Poppins:700|Oswald:700|Roboto:300,400&display=swap" rel="stylesheet">
 
 
@@ -165,13 +166,26 @@
 			</ul>
 		</section>
 		<section class="testimonials">
-			<h2 class="section-title"></h2>
-			<span></span>
-			<div class="testimonials__slider">
-				<div class="testimonials__item">
-					<p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos consequatur ex fugit nobis quidem facere, alias, atque, mollitia odit, at doloremque rem quasi animi. <span>Quis libero, error dolores expedita numquam.</span> Cumque sunt voluptatem quod molestiae.</p>
-					<img src="" alt="">
-					<p class="autor">Jesica Gomez <br><span>CEO, Funder</span></p>
+			<div class="container">
+				<div class="decoration"></div>
+				<h2 class="section-title">Testimonials</h2>
+				<span></span>
+				<div class="testimonials__slider main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+					<div class="testimonials__item carousel-cell">
+						<p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos consequatur ex fugit nobis quidem facere, alias, atque, mollitia odit, at doloremque rem quasi animi. <span>Quis libero, error dolores expedita numquam.</span> Cumque sunt voluptatem quod molestiae.</p>
+						<img src="./imgs/home/testimonials/photo.png" alt="Jesica Gomez CEO, Funder">
+						<p class="autor">Jesica Gomez<br><span>CEO, Funder</span></p>
+					</div>
+					<div class="testimonials__item carousel-cell">
+						<p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos consequatur ex fugit nobis quidem facere, alias, atque, mollitia odit, at doloremque rem quasi animi. <span>Quis libero, error dolores expedita numquam.</span> Cumque sunt voluptatem quod molestiae.</p>
+						<img src="./imgs/home/testimonials/photo.png" alt="Jesica Gomez CEO, Funder">
+						<p class="autor">Jesica Gomez<br><span>CEO, Funder</span></p>
+					</div>
+					<div class="testimonials__item carousel-cell">
+						<p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos consequatur ex fugit nobis quidem facere, alias, atque, mollitia odit, at doloremque rem quasi animi. <span>Quis libero, error dolores expedita numquam.</span> Cumque sunt voluptatem quod molestiae.</p>
+						<img src="./imgs/home/testimonials/photo.png" alt="Jesica Gomez CEO, Funder">
+						<p class="autor">Jesica Gomez<br><span>CEO, Funder</span></p>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -244,8 +258,10 @@
 	</footer>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
 	<script src="scripts/header.js" type="module"></script>
+	<script src="scripts/testimonials.js" type="module"></script>
 	<script src="scripts/script.js" type="module"></script>
 	<script src="scripts/decorations.js" type="module"></script>
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 
 
