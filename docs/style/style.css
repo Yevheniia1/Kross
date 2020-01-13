@@ -260,7 +260,8 @@ body {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 3.86364em; }
+    margin-top: 3.86364em;
+    position: relative; }
     .education .education__list li {
       width: 49%;
       margin-bottom: 3.63636em;
@@ -273,6 +274,7 @@ body {
         background-color: #ffffff;
         border-radius: 50%;
         background-image: url(../imgs/icons/education/graduation-hat.svg);
+        box-shadow: 0px 18px 39.1px 6.9px rgba(224, 241, 255, 0.34);
         background-repeat: no-repeat;
         background-size: 50%;
         background-position: center center; }
@@ -356,6 +358,43 @@ body {
       text-align: center;
       line-height: 1.9;
       transition-duration: 0.5s; }
+
+.portfolio {
+  width: 73.125%;
+  max-width: 1170px;
+  margin: 0 auto;
+  margin-top: 7.72727em; }
+  .portfolio .portfolio__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-top: 4.09091em;
+    max-height: 26.59091em;
+    display: grid;
+    grid-gap: 1.36364em;
+    grid-template-areas: "Milkbar GamePlace GetUp" "Milkbar Game4Game SportHub"; }
+    .portfolio .portfolio__list li {
+      border-radius: 5px;
+      overflow: hidden; }
+      .portfolio .portfolio__list li[data-project="Milkbar"] {
+        grid-area: Milkbar; }
+      .portfolio .portfolio__list li[data-project="GamePlace"] {
+        grid-area: GamePlace; }
+      .portfolio .portfolio__list li[data-project="GetUp"] {
+        grid-area: GetUp; }
+      .portfolio .portfolio__list li[data-project="Game4Game"] {
+        grid-area: Game4Game; }
+      .portfolio .portfolio__list li[data-project="SportHub"] {
+        grid-area: SportHub; }
+    .portfolio .portfolio__list .link {
+      color: #000000;
+      text-decoration: none;
+      display: block;
+      height: 100%; }
+      .portfolio .portfolio__list .link img {
+        height: 100%;
+        display: block;
+        object-fit: cover; }
 
 .leaf-1, .leaf-2, .leaf-3, .leaf-4, .leaf-5, .leaf-6, .drops-1, .drops-2 {
   position: absolute;

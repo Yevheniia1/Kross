@@ -254,6 +254,7 @@
         @include horizontal-list;
         flex-wrap: wrap;
         margin-top: em(85px);
+        position: relative;
 
         li {
             width: 49%;
@@ -267,6 +268,7 @@
                 background-color: $white;
                 border-radius: $border-radius--circle;
                 background-image: url(../imgs/icons/education/graduation-hat.svg);
+                box-shadow: 0px 18px 39.1px 6.9px rgba(224, 241, 255, 0.34);
                 @include bg-image(50%);
             }
         }
@@ -365,6 +367,47 @@
             text-align: center;
             line-height: 1.9;
             transition-duration: $transition-duration--base;
+        }
+    }
+}
+
+.portfolio {
+    @include container;
+    margin-top: em(170px);
+
+    .portfolio__list {
+        @include reset-list;
+        margin-top: em(90px);
+        max-height: em(585px);
+        display: grid;
+        grid-gap: em(30px);
+        grid-template-areas: 
+        "Milkbar GamePlace GetUp"
+        "Milkbar Game4Game SportHub"
+        ;
+
+        li {
+            border-radius: $border-radius--s;
+            overflow: hidden;
+
+            //Названия секций для формирования сетки
+            @each $name in (Milkbar, GamePlace, GetUp, Game4Game, SportHub) {
+                &[data-project = "#{$name}"] {
+                    grid-area: #{$name};
+                }
+            }
+        }
+
+        .link {
+            @include reset-link;
+            display: block;
+            height: 100%;
+
+            img {
+                height: 100%;
+                display: block;
+                object-fit: cover;
+            }
         }
     }
 }
