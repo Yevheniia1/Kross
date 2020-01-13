@@ -1,8 +1,9 @@
 //Helpers
-@import "./helpers/extends";
-@import "./helpers/mixins";
-@import "./helpers/functions";
+
 @import "./helpers/variables";
+@import "./helpers/mixins";
+@import "./helpers/extends";
+@import "./helpers/functions";
 //Base
 @import "./base";
 //Styles

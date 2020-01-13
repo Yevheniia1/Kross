@@ -57,3 +57,13 @@
 	background-size: $size;
 	background-position: $position;
 }
+
+@mixin header-elem-width--pc($px) {
+    width: calculate-size--pc($px, $header-container-width);
+}
+
+@mixin container {
+	width: calculation-size--pc($container-width, $start-layout-width);
+	max-width: $container-width;
+	margin: 0 auto;
+}

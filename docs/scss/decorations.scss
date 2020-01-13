@@ -1,18 +1,3 @@
-$start-width-layout: parse-int(1460px);
-$start-height-layout: parse-int(865px);
-
-@function percentage-height-calculation($px) {
-    @return (parse-int($px) * 100 / $start-height-layout) * 1%;
-}
-
-@function percentage-width-calculation($px) {
-    @return (parse-int($px) * 100 / $start-width-layout) * 1%;
-}
-
-@mixin width-decoration($px) {
-    width: percentage-width-calculation($px);
-}
-
 .leaf-1, .leaf-2, .leaf-3, .leaf-4, .leaf-5, .leaf-6, .drops-1, .drops-2 {
     position: absolute;
     height: auto;
@@ -22,45 +7,45 @@ $start-height-layout: parse-int(865px);
 .header--home .decoration {
 
     .drops-1 {
-        @include width-decoration(132px);
-        top: percentage-height-calculation(190px);
-        right: percentage-width-calculation(455px);
+        @include header-elem-width--pc(132px);
+        top: calculation-size--pc(190px, $header-container-height);
+        right: calculation-size--pc(455px, $header-container-width);
     }
 
     .drops-2 {
-        @include width-decoration(88px);
-        bottom: percentage-height-calculation(120px);
-        left: percentage-width-calculation(390px);
+        @include header-elem-width--pc(88px);
+        bottom: calculation-size--pc(120px, $header-container-height);
+        left: calculation-size--pc(390px, $header-container-width);
     }
 
     .leaf-1 {
-        @include width-decoration(516px);
-        top: percentage-height-calculation(155px);
-        left: percentage-width-calculation(-360px);
+        @include header-elem-width--pc(516px);
+        top: calculation-size--pc(155px, $header-container-height);
+        left: calculation-size--pc(-360px, $header-container-width);
     }
 
     .leaf-2 {
-        @include width-decoration(72px);
-        top: percentage-height-calculation(195px);
-        left: percentage-width-calculation(660px);
+        @include header-elem-width--pc(72px);
+        top: calculation-size--pc(195px, $header-container-height);
+        left: calculation-size--pc(660px, $header-container-width);
     }
 
     .leaf-3 {
-        @include width-decoration(346px);
-        top: percentage-height-calculation(115px);
-        right: percentage-width-calculation(-270px);
+        @include header-elem-width--pc(346px);
+        top: calculation-size--pc(115px, $header-container-height);
+        right: calculation-size--pc(-270px, $header-container-width);
     }
 
     .leaf-5 {
-        @include width-decoration(84px);
-        bottom: percentage-height-calculation(170px);
-        right: percentage-width-calculation(460px);
+        @include header-elem-width--pc(84px);
+        bottom: calculation-size--pc(170px, $header-container-height);
+        right: calculation-size--pc(460px, $header-container-width);
     }
 
     .leaf-6 {
-        @include width-decoration(170px);
-        bottom: percentage-height-calculation(145px);
-        right: percentage-width-calculation(-100px);
+        @include header-elem-width--pc(170px);
+        bottom: calculation-size--pc(145px, $header-container-height);
+        right: calculation-size--pc(-100px, $header-container-width);
     }
 
     
@@ -68,8 +53,8 @@ $start-height-layout: parse-int(865px);
 
 .about {
     .leaf-4 {
-        @include width-decoration(169px);
-        top: percentage-height-calculation(-150px);
-        left: percentage-width-calculation(15px);
+        @include header-elem-width--pc(169px);
+        top: calculate-size--pc(-150px, $header-container-height);
+        left: calculate-size--pc(15px, $header-container-width);
     }
 }

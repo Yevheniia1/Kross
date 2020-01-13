@@ -93,8 +93,7 @@
 }
 
 .about {
-    width: 73.13%;
-    margin: 0 auto;
+    @include container;
 
     padding-top: em(75px);
     position: relative;
@@ -120,8 +119,8 @@
 }
 
 .skills {
-    margin: em(130px) auto 0;
-    width: 73.13%;
+    @include container;
+    margin-top: em(130px);
 
     .skills__list {
         @include horizontal-list;
@@ -180,8 +179,8 @@
 }
 
 .experience {
-    margin: em(170px) auto 0;
-    width: 73.13%;
+    @include container;
+    margin-top: em(170px);
 
     .experience__list {
         @include horizontal-list;
@@ -196,6 +195,8 @@
             @include size(em(130px), em(130px));
         }
 
+
+        //иконки
         $companies: (webex, augmedix, themefisher);
         $src: "../imgs/icons/experience";
 
@@ -226,8 +227,72 @@
             margin: 0;
 
             @include font--primary($gray);
+            line-height: 2;
             text-transform: uppercase;
             text-align: center;
+        }
+    }
+}
+
+.education {
+    @include container;
+    margin-top: em(190px);
+    position: relative;
+
+    &:before {
+        content: "";
+        position: absolute;
+        width: 100vw;
+        max-width: 1600px;
+        height: em(1200px);
+        background-image: url(../imgs/home/education/background.png);
+        transform: translateX(-13.435%);
+        top: em(-340px);
+    }
+
+    .education__list {
+        @include horizontal-list;
+        flex-wrap: wrap;
+        margin-top: em(85px);
+
+        li {
+            width: 49%;
+            margin-bottom: em(80px);
+            display: flex;
+
+            &:before {
+                content: "";
+                display: block;
+                @include size(em(100px), em(100px));
+                background-color: $white;
+                border-radius: $border-radius--circle;
+                background-image: url(../imgs/icons/education/graduation-hat.svg);
+                @include bg-image(50%);
+            }
+        }
+
+        .description {
+            padding-left: em(70px);
+        }
+
+        .date {
+            margin: 0;
+
+            @include font($black, em($font-size--s), $font-description);
+            line-height: 2;
+        }
+
+        .certificate {
+            margin: 0;
+
+            @include font--primary;
+            line-height: 1.5;
+        }
+
+        .institution {
+            margin: 0;
+
+            @include font--primary($gray, $font-size--s);
             line-height: 2;
         }
     }

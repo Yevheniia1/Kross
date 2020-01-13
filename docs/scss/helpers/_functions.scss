@@ -8,3 +8,8 @@
 @function em($pixels, $font-size: $font-size--base) {
     @return (parse-int($pixels) / parse-int($font-size)) * 1em;
 }
+
+@function calculation-size--pc($elem--px, $parent--px) {
+    @return (parse-int($elem--px) * 100 / parse-int($parent--px)) * 1%;
+}
+
