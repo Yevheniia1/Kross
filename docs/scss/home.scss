@@ -399,7 +399,8 @@
 
         .link {
             @include reset-link;
-            display: block;
+            display: flex;
+            justify-content: center;
             height: 100%;
 
             img {
@@ -501,10 +502,106 @@
 
         li {
             width: 20%;
-            
+
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+    }
+}
+
+.blogs {
+    @include container;
+    margin-top: em(125px);
+
+    .blogs__wrapper {
+        @extend %flex-sb;
+        margin-top: em(80px);
+    }
+
+    .blog__post {
+        display: flex;
+
+        box-shadow: 0px 59px 39.1px 6.9px rgba(224, 241, 255, 0.34);
+        border-radius: $border-radius--s;
+        overflow: hidden;
+
+        img {
+            @include size(100%, 100%);
+            object-fit: cover;
+            object-position: top center;
+        }
+
+        a {
+            @include reset-link;
+        }
+
+        .post__wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .title{
+            margin: em(35px) 0 0;
+            @include font--primary;
+        }
+
+        .content {
+            @include font--description;
+            line-height: 1.5;
+        }
+
+        .category {
+            margin: 0;
+            padding: 0 10px;
+            display: inline-block;
+            @include font($violet, $font-size--s, $font-primary);
+        }
+
+        &:first-child {
+            width: calculation-size--pc(770px, $container-width);
+            
+            .post__wrapper {
+                padding: em(20px) em(45px);
+            }
+
+            .content {
+                margin: em(35px) 0 0;
+            }
+
+            .category__link {
+                margin-top: em(50px);
+            }
+
+            .category {
+                background-color: rgba($color: $violet, $alpha: .2);
+            }
+        }
+    
+        &:nth-child(2) {
+            width: calculation-size--pc(370px, $container-width);
+            flex-direction: column;
+    
+            img {
+                max-height: em(270px);
+            }
+
+            .post__wrapper {
+                padding: em(20px) em(30px);
+            }
+
+            .content {
+                margin: em(5px) 0 0;
+            }
+
+            .category__link {
+                margin-top: em(20px);
+            }
+
+            .category {
+                background-color: rgba($color: $pink, $alpha: .2);
+            }
         }
     }
 }
