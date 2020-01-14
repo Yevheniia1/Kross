@@ -489,3 +489,22 @@
         }
     }
 }
+
+.clients {
+    @include container;
+    margin-top: em(120px);
+
+    .clients__list {
+        @include horizontal-list;
+        justify-content: space-between;
+        min-height: em(45px);
+
+        li {
+            width: 20%;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

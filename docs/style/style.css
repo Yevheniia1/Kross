@@ -464,6 +464,24 @@ body {
     .testimonials .flickity-page-dots .dot.is-selected {
       width: 25px; }
 
+.clients {
+  width: 73.125%;
+  max-width: 1170px;
+  margin: 0 auto;
+  margin-top: 5.45455em; }
+  .clients .clients__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    min-height: 2.04545em; }
+    .clients .clients__list li {
+      width: 20%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+
 .leaf-1, .leaf-2, .leaf-3, .leaf-4, .leaf-5, .leaf-6, .dots-1, .dots-2, .dots-3, .dots-4 {
   position: absolute;
   height: auto;
