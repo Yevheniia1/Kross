@@ -228,46 +228,56 @@
 				</div>
 			</div>
 		</section>
-		<section class="contact">
-			<h2 class="section-title">Contact Info</h2>
-			<form action="./contant-form" method="POST">
-				<h3 class="form__title">Contact Form</h3>
-				<label for="name">Full Name</label>
-				<input type="text" id="name" name="name">
-				<label for="email">Email@example.com</label>
-				<input type="email" id="email" name="email">
-				<label for="message">Type message here</label>
-				<textarea name="message" id="message" cols="30" rows="10"></textarea>
-				<input type="submit" value="Send" class="form__btn">
-			</form>
-		</section>
 	</main>
 
-	<footer>
-		<ul class="footer-contact">
-			<li>
-				<p class="title">Email</p>
-				<p>steve.fruits@email.com</p>
-			</li>
-			<li>
-				<p class="title">Phone</p>
-				<p>+880 2544 658 256</p>
-			</li>
-			<li>
-				<p class="title">Address</p>
-				<p>125/A, CA Commercial Area, <br>California, USA</p>
-			</li>
-		</ul>
-		<p class="copyright">
-			© Kross. All Right Reserved 2018.
-		</p>
+	<footer class="main-footer">
+		<section class="contact-info">
+			<h2 class="section-title">Contact Info</h2>
+			<div class="form__wrapper">
+				<form action="./contant-form" method="POST" class="contact-form">
+					<h3 class="form__title">Contact Form</h3>
+					<div class="fields__wrapper">
+						<label>Full Name
+							<input type="text" id="name" name="name">
+						</label>
+						<label for="email">Email@example.com
+							<input type="email" id="email" name="email">
+						</label>
+					</div>
+					<label for="message" class="message">Type message header</label>
+					<textarea name="message" id="message" rows="5"></textarea>
+					<input type="submit" value="Send" class="form__btn">
+				</form>
+			</div>
+		</section>
+		<section class="footer__contact">
+			<div class="container">
+				<ul class="contact__list">
+					<li>
+						<p class="title">Email</p>
+						<p class="value">steve.fruits@email.com</p>
+					</li>
+					<li>
+						<p class="title">Phone</p>
+						<p class="value">+880 2544 658 256</p>
+					</li>
+					<li>
+						<p class="title">Address</p>
+						<p class="value">125/A, CA Commercial Area, <br>California, USA</p>
+					</li>
+				</ul>
+				<p class="copyright">
+					© Kross. All Right Reserved 2018.
+				</p>
+			</div>
+		</section>
 	</footer>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 	<script src="scripts/header.js" type="module"></script>
 	<script src="scripts/testimonials.js" type="module"></script>
 	<script src="scripts/script.js" type="module"></script>
 	<script src="scripts/decorations.js" type="module"></script>
-	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 
 

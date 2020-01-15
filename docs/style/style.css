@@ -133,7 +133,7 @@ body {
     line-height: 1.64;
     text-align: center; }
   .about .button {
-    margin-top: 1.36364em;
+    margin-top: 1.66667em;
     color: #000000;
     text-decoration: none;
     display: block;
@@ -352,7 +352,7 @@ body {
       text-align: center;
       transition-duration: 0.5s; }
     .services .services__list .description {
-      margin: 0.90909em 0;
+      margin: 1.33333em 0;
       font-family: "Roboto", sans-serif;
       color: rgba(0, 0, 0, 0.5);
       font-size: 15px;
@@ -525,10 +525,12 @@ body {
       color: #41228e; }
     .blogs .blog__post:first-child {
       width: 65.81197%; }
+      .blogs .blog__post:first-child img {
+        max-width: 50%; }
       .blogs .blog__post:first-child .post__wrapper {
         padding: 0.90909em 2.04545em; }
       .blogs .blog__post:first-child .content {
-        margin: 1.59091em 0 0; }
+        margin: 2.33333em 0 0; }
       .blogs .blog__post:first-child .category__link {
         margin-top: 2.27273em; }
       .blogs .blog__post:first-child .category {
@@ -546,6 +548,115 @@ body {
         margin-top: 0.90909em; }
       .blogs .blog__post:nth-child(2) .category {
         background-color: rgba(245, 78, 162, 0.2); }
+
+.main-footer {
+  margin-top: 5.68182em;
+  padding-top: 2.72727em;
+  background-image: url(../imgs/home/footer/background.png);
+  position: relative; }
+  .main-footer .contact-info {
+    position: relative; }
+    .main-footer .contact-info:before {
+      content: "";
+      z-index: 0;
+      position: absolute;
+      width: 100%;
+      height: 26.5%;
+      bottom: 0;
+      left: 0;
+      background-color: #222222; }
+  .main-footer .form__wrapper {
+    width: 48.125%;
+    margin: 4.54545em auto 0;
+    box-shadow: 0px 0px 80.75px 14.25px rgba(224, 241, 255, 0.34); }
+  .main-footer .contact-form {
+    padding: 2.27273em 3.18182em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 15px; }
+    .main-footer .contact-form .form__title {
+      font-family: "Playfair Display", serif;
+      color: #000000;
+      font-size: 22px;
+      text-align: center; }
+    .main-footer .contact-form .fields__wrapper {
+      margin-top: 3.18182em;
+      display: flex; }
+      .main-footer .contact-form .fields__wrapper label {
+        width: 50%; }
+      .main-footer .contact-form .fields__wrapper input {
+        display: block; }
+    .main-footer .contact-form label {
+      font-family: "Roboto", sans-serif;
+      color: #000000;
+      font-size: 15px; }
+    .main-footer .contact-form .message {
+      margin-top: 2.77778em; }
+    .main-footer .contact-form input {
+      width: 90%; }
+    .main-footer .contact-form textarea {
+      resize: none; }
+    .main-footer .contact-form input, .main-footer .contact-form textarea {
+      margin-top: 5px;
+      padding: 5px 10px;
+      font-family: "Playfair Display", serif;
+      color: #000000;
+      font-size: 22px;
+      border: none;
+      border-bottom: 1px solid #999999; }
+    .main-footer .contact-form .form__btn {
+      width: 46%;
+      margin: 1.81818em auto 0;
+      font-family: "Playfair Display", serif;
+      color: #ffffff;
+      font-size: 22px;
+      text-transform: uppercase;
+      text-align: center;
+      line-height: 2.3;
+      background-color: #41228e;
+      border-radius: 5px; }
+  .main-footer .footer__contact {
+    position: relative;
+    background-color: #222222; }
+    .main-footer .footer__contact .contact__list {
+      width: 73.125%;
+      max-width: 1170px;
+      margin: 0 auto;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      padding: 2.72727em 0; }
+      .main-footer .footer__contact .contact__list li {
+        width: 24%; }
+      .main-footer .footer__contact .contact__list .title {
+        margin: 0;
+        font-family: "Playfair Display", serif;
+        color: #999999;
+        font-size: 18px; }
+      .main-footer .footer__contact .contact__list .value {
+        margin: 0.90909em 0 0;
+        font-family: "Playfair Display", serif;
+        color: #ffffff;
+        font-size: 22px; }
+    .main-footer .footer__contact .copyright {
+      margin: 0;
+      padding: 2.66667em 0 4em;
+      position: relative;
+      text-align: center;
+      font-family: "Roboto", sans-serif;
+      color: #ffffff;
+      font-size: 15px; }
+      .main-footer .footer__contact .copyright::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #999999; }
 
 .leaf-1, .leaf-2, .leaf-3, .leaf-4, .leaf-5, .leaf-6, .dots-1, .dots-2, .dots-3, .dots-4 {
   position: absolute;

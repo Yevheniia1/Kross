@@ -105,7 +105,7 @@
     }
 
     .button {
-        margin-top: em(30px);
+        margin-top: em(30px, $font-size--s);
 
         @include reset-link;
         display: block;
@@ -361,7 +361,7 @@
         }
 
         .description {
-            margin: em(20px) 0;
+            margin: em(20px, $font-size--xs) 0;
             @include font--description(rgba($color: $black, $alpha: .5));
             text-align: center;
             line-height: 1.9;
@@ -561,13 +561,17 @@
 
         &:first-child {
             width: calculation-size--pc(770px, $container-width);
+
+            img {
+                max-width: 50%;
+            }
             
             .post__wrapper {
                 padding: em(20px) em(45px);
             }
 
             .content {
-                margin: em(35px) 0 0;
+                margin: em(35px, $font-size--xs) 0 0;
             }
 
             .category__link {
@@ -604,4 +608,150 @@
             }
         }
     }
+}
+
+.main-footer {
+    margin-top: em(125px);
+    padding-top: em(60px);
+    background-image: url(../imgs/home/footer/background.png);
+    position: relative;
+
+    .contact-info {
+        position: relative;
+
+        &:before {
+            content: "";
+            z-index: 0;
+            position: absolute;
+            width: 100%;
+            height: 26.5%;
+            bottom: 0;
+            left: 0;
+            background-color: $dark-gray;
+        }
+    }
+
+    .form__wrapper {
+        width: calculation-size--pc(770px, $start-layout-width);
+        margin: em(100px) auto 0;
+        
+        box-shadow: 0px 0px 80.75px 14.25px rgba(224, 241, 255, 0.34); 
+    }
+
+    .contact-form {
+        padding: em(50px) em(70px);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+
+        background-color: $white;
+        border-radius: $border-radius--md;
+
+        .form__title {
+            @include font--primary;
+            text-align: center;
+        }
+    
+        .fields__wrapper {
+            margin-top: em(70px);
+            display: flex;
+    
+            label {
+                width: 50%;
+            }
+    
+            input{
+                display: block;
+            }
+        }
+
+        label {
+            @include font--description;
+        }
+
+        .message {
+            margin-top: em(50px, $font-size--s);
+        }
+
+        input {
+            width: 90%;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        input, textarea {
+            margin-top: 5px;
+            padding: 5px 10px;
+
+            @include font--primary;
+            border: none;
+            border-bottom: 1px solid $gray;
+        }
+
+        .form__btn {
+            width: 46%;
+            margin: em(40px) auto 0;
+
+            @include font--primary($white);
+            text-transform: uppercase;
+            text-align: center;
+            line-height: 2.3;
+
+            background-color: $violet;
+            border-radius: $border-radius--s;
+        }
+    }
+
+    .footer__contact {
+        position: relative;
+        background-color: $dark-gray;
+
+          .contact__list {
+              @include container;
+              list-style: none;
+              display: flex;
+              justify-content: space-between;
+              padding: em(60px) 0;
+
+              li {
+                  width: 24%;
+              }
+
+              .title {
+                margin: 0;
+                @include font--primary($gray, $font-size--s);
+              }
+
+              .value {
+                margin: em(20px) 0 0;
+                @include font--primary($white);
+              }
+          }
+
+        .copyright {
+            $font-size: $font-size--xs;
+
+            margin: 0;
+            padding: em(40px, $font-size) 0 em(60px, $font-size);
+            position: relative;
+
+            text-align: center;
+            @include font--description($white);
+            
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                width: 100%;
+                height: 1px;
+                background-color: $gray;
+            }
+         }
+      }
 }
