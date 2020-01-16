@@ -28,9 +28,11 @@ $border-radius--circle: 50%;
 //Size
 $start-layout-width: 1600px;
 $container-width: 1170px;
-// $container-width--pc: 
 $header-container-width: 1460px;
 $header-container-height: 865px;
 
 //Animation
 $transition-duration--base: .5s;
+
+//Filters
+$blur-size: 10px;

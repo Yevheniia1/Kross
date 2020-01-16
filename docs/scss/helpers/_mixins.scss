@@ -60,6 +60,22 @@
 
 @mixin header-elem-width--pc($px) {
     width: calculation-size--pc($px, $header-container-width);
+
+    @include tablet-landscape  {
+        width: calculation-size--pc($px, $header-container-width) * 1.2;
+    }
+
+    @include tablet-portrait {
+        width: calculation-size--pc($px, $header-container-width) * 1.5;
+    }
+
+    @include phone-landscape {
+        width: calculation-size--pc($px, $header-container-width) * 2;
+    }
+
+    @include phone-portrait {
+        width: calculation-size--pc($px, $header-container-width) * 2.5;
+    }
 }
 
 @mixin container {
@@ -72,4 +88,21 @@
     width: calculation-size--pc($header-container-width, $start-layout-width);
     max-width: $header-container-width;
     margin: 0 auto;
+}
+
+//Media Queries
+@mixin phone-portrait {
+    @media (max-width: 399px) { @content; }
+  }
+@mixin phone-landscape{
+    @media (max-width: 699px) { @content; }
+  }
+@mixin tablet-portrait {
+    @media (max-width: 899px) { @content; }
+}
+@mixin tablet-landscape {
+    @media (max-width: 1199px) { @content; }
+}
+@mixin desktop {
+    @media (max-width: 1599px) { @content; }
 }

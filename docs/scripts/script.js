@@ -1,3 +1,4 @@
+
 // Функция для создание детей(строка с тегом) с одинаковым классом в родителе(элемент)
 
 function createNewElements(parent, child, className) { 
@@ -24,6 +25,5 @@ function createNewElements(parent, child, className) {
     }
 
 }
-
 
 export {createNewElements}

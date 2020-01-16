@@ -8,7 +8,6 @@
 	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Lora:400,400i|Playfair+Display:400,700|Poppins:700|Oswald:700|Roboto:300,400&display=swap" rel="stylesheet">
 
-
 	<title>Kross</title>
 </head>
 
@@ -16,9 +15,12 @@
 <body>
 
 	<header class="header header--home">
-		<div class="container">
+		<div class="navigation__wrapper">
 			<nav class="navigation">
 				<a href="index.html" class="logo">kross</a>
+				<button type="button" class="burger__btn">
+					<span></span>
+				</button>
 				<ul class="navigation__list">
 					<li><a disabled>Home</a></li>
 					<li><a href="about.html">About</a></li>
@@ -27,6 +29,8 @@
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
 			</nav>
+		</div>
+		<div class="container">
 			<h1 class="title">Hi! I’m <br>Christoher <br>UX designer</h1>
 			<ul class="social-list">
 				<li><a href="#" title="Facebook"><span class="visually-hidden">Facebook</span></a></li>
@@ -34,7 +38,6 @@
 				<li><a href="#" title="Dribbble"><span class="visually-hidden">Dribbble</span></a></li>
 				<li><a href="#" title="Behance"><span class="visually-hidden">Behance</span></a></li>
 			</ul>
-
 			<div class="decoration"></div>
 		</div>
 	</header>
@@ -244,7 +247,7 @@
 							<input type="email" id="email" name="email">
 						</label>
 					</div>
-					<label for="message" class="message">Type message header</label>
+					<label for="message" class="message">Type message Here</label>
 					<textarea name="message" id="message" rows="5"></textarea>
 					<input type="submit" value="Send" class="form__btn">
 				</form>

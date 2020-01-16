@@ -1,6 +1,26 @@
 body {
 	font-size: $font-size--base;
 	margin: 0;
+
+	@include desktop {
+		font-size: 20px;
+	}
+
+	@include tablet-landscape {
+		font-size: 18px;
+	}
+
+	@include tablet-portrait {
+		font-size: 15px;
+	}
+
+	@include phone-landscape{
+		font-size: 12px;
+	}
+
+	@include phone-portrait {
+		font-size: 10px;
+	}
 }
 
 .visually-hidden:not(:focus):not(:active) {
@@ -24,4 +44,8 @@ body {
 
 .container {
 	margin: 0 auto;
+}
+
+.blur {
+	filter: blur($blur-size);
 }
