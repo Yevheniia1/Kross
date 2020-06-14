@@ -54,8 +54,7 @@ body {
   background-image: url(../imgs/home/bg-header.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
-  overflow: hidden; }
+  background-position: center center; }
   .header--home:before {
     transition-duration: 0.5s; }
   @media (max-width: 899px) {
@@ -884,7 +883,7 @@ body {
 
 .header--home .decoration .leaf-2 {
   width: 4.93151%;
-  top: 22.54335%;
+  top: 0%;
   left: 45.20548%; }
   @media (max-width: 1199px) {
     .header--home .decoration .leaf-2 {
@@ -950,21 +949,21 @@ body {
     .header--home .decoration .leaf-6 {
       width: 29.10959%; } }
 
-.about .leaf-4 {
+.header--home .decoration .leaf-4 {
   width: 11.57534%;
-  top: -17.34104%;
+  bottom: 1.15607%;
   left: 1.0274%; }
   @media (max-width: 1199px) {
-    .about .leaf-4 {
+    .header--home .decoration .leaf-4 {
       width: 13.89041%; } }
   @media (max-width: 899px) {
-    .about .leaf-4 {
+    .header--home .decoration .leaf-4 {
       width: 17.36301%; } }
   @media (max-width: 699px) {
-    .about .leaf-4 {
+    .header--home .decoration .leaf-4 {
       width: 23.15068%; } }
   @media (max-width: 399px) {
-    .about .leaf-4 {
+    .header--home .decoration .leaf-4 {
       width: 28.93836%; } }
 
 .testimonials .dots-3 {
@@ -1001,22 +1000,23 @@ body {
     .testimonials .dots-4 {
       width: 15.06849%; } }
 
-.testimonials .leaf-2 {
-  width: 4.93151%;
-  top: 5.20231%;
-  right: 11.64384%; }
+.testimonials .leaf-1 {
+  width: 35.34247%;
+  transform: scale(-1);
+  top: 29.47977%;
+  right: -24.65753%; }
   @media (max-width: 1199px) {
-    .testimonials .leaf-2 {
-      width: 5.91781%; } }
+    .testimonials .leaf-1 {
+      width: 42.41096%; } }
   @media (max-width: 899px) {
-    .testimonials .leaf-2 {
-      width: 7.39726%; } }
+    .testimonials .leaf-1 {
+      width: 53.0137%; } }
   @media (max-width: 699px) {
-    .testimonials .leaf-2 {
-      width: 9.86301%; } }
+    .testimonials .leaf-1 {
+      width: 70.68493%; } }
   @media (max-width: 399px) {
-    .testimonials .leaf-2 {
-      width: 12.32877%; } }
+    .testimonials .leaf-1 {
+      width: 88.35616%; } }
 
 .testimonials .leaf-4 {
   width: 11.57534%;

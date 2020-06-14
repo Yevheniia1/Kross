@@ -26,7 +26,7 @@
 
     .leaf-2 {
         @include header-elem-width--pc(72px);
-        top: calculation-size--pc(195px, $header-container-height);
+        top: calculation-size--pc(0, $header-container-height);
         left: calculation-size--pc(660px, $header-container-width);
     }
 
@@ -48,13 +48,9 @@
         right: calculation-size--pc(-100px, $header-container-width);
     }
 
-    
-}
-
-.about {
     .leaf-4 {
         @include header-elem-width--pc(169px);
-        top: calculation-size--pc(-150px, $header-container-height);
+        bottom: calculation-size--pc(10px, $header-container-height);
         left: calculation-size--pc(15px, $header-container-width);
     }
 }
@@ -72,10 +68,11 @@
         right: calculation-size--pc(-20px, $header-container-width);
     }
 
-    .leaf-2 {
-        @include header-elem-width--pc(72px);
-        top: calculation-size--pc(45px, $header-container-height);
-        right: calculation-size--pc(170px, $header-container-width);
+    .leaf-1 {
+        @include header-elem-width--pc(516px);
+        transform: scale(-1);
+        top: calculation-size--pc(255px, $header-container-height);
+        right: calculation-size--pc(-360px, $header-container-width);
     }
 
     .leaf-4 {

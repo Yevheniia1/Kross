@@ -2,7 +2,6 @@
     background-image: url(../imgs/home/bg-header.png);
     @include bg-image(cover);
     
-    overflow: hidden;
 
     &:before {
         transition-duration: $transition-duration--base;

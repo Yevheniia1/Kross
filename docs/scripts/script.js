@@ -1,5 +1,10 @@
-import {openMobileNavigation, runHeaderDecoration} from './header.js';
+import {openMobileNavigation, runHeaderDecorations} from './header.js';
+import {runTestimonialsDecorations} from './testimonials.js';
 
 //HEADER
 openMobileNavigation();
-runHeaderDecoration();
+runHeaderDecorations();
+
+
+//TESTIMONIALS
+runTestimonialsDecorations();
