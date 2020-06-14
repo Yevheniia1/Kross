@@ -24,11 +24,11 @@ function leaf2() {
           ease = Power0.easeNone,
           vertical_displacement = '+=250';
    
-    tl.fromTo(elem, sec, {x: 50, y: -300}, {xPercent: -50, yPercent: vertical_displacement, rotation: rl, ease: ease})
-    .to(elem, sec - 2, {rotation: -75, yPercent: '+=75', ease: ease})
-    .to(elem, sec, {xPercent: 20, yPercent: vertical_displacement, rotation: rr, ease: ease})
-    .to(elem, sec + 1, {rotation: -380, yPercent: '+=350', xPercent: 200, ease: ease,  opacity: 0})
-    // .to(elem, sec, {rotation: -550, yPercent: vertical_displacement, xPercent: 400, ease: ease, opacity: 0})
+          tl.fromTo(elem, sec, {x: 50, y: -300}, {xPercent: -50, yPercent: vertical_displacement, rotation: rl, ease: ease})
+          .to(elem, sec - 2, {rotation: -75, yPercent: '+=75', ease: ease})
+          .to(elem, sec, {xPercent: 20, yPercent: vertical_displacement, rotation: rr, ease: ease})
+          .to(elem, sec + 1, {rotation: -380, yPercent: '+=350', xPercent: 200, ease: ease,  opacity: 0})
+          // .to(elem, sec, {rotation: -550, yPercent: vertical_displacement, xPercent: 400, ease: ease, opacity: 0})
 
     return tl;
 }

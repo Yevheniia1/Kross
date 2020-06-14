@@ -82,6 +82,7 @@
         
             @include reset-link;
             display: block;
+            position: relative;
 
             @include font--primary($white, em($font-size--s));
             text-transform: uppercase;
@@ -90,6 +91,26 @@
 
             &[disabled] {
                 font-weight: 700;
+                cursor: default;
+            }
+
+            &:after{
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                @include size(0, 1px);
+                background-color: $white;
+                transition-duration: .8s;
+            }
+
+            &:not([disabled]):hover {
+                &:after {
+                    transition-property: width;
+                    width: 100%;
+                    transition-duration: .8s;
+                    transition-timing-function: ease-out;
+                }
             }
         }
     }
@@ -234,6 +255,11 @@
                         transform: translateX(-15px);
                         color: rgba($color: $dark-gray, $alpha: .7);
                         transition-duration: $transition-duration--base;
+                    }
+
+                    &:after {
+                        visibility: hidden;
+                        display: none;
                     }
                 }
             }
@@ -562,7 +588,6 @@
     .portfolio__list {
         @include reset-list;
         margin-top: em(90px);
-        max-height: em(585px);
         display: grid;
         grid-gap: em(30px);
         grid-template-areas: 

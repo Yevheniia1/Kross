@@ -13,7 +13,7 @@ body {
   margin: 0; }
   @media (max-width: 1599px) {
     body {
-      font-size: 20px; } }
+      font-size: 18px; } }
   @media (max-width: 1199px) {
     body {
       font-size: 18px; } }
@@ -117,6 +117,7 @@ body {
       color: #000000;
       text-decoration: none;
       display: block;
+      position: relative;
       font-family: "Playfair Display", serif;
       color: #ffffff;
       font-size: 0.81818em;
@@ -124,7 +125,22 @@ body {
       line-height: 2.3;
       transition-duration: 0.5s; }
       .header--home .navigation__list li a[disabled] {
-        font-weight: 700; }
+        font-weight: 700;
+        cursor: default; }
+      .header--home .navigation__list li a:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 1px;
+        background-color: #ffffff;
+        transition-duration: .8s; }
+      .header--home .navigation__list li a:not([disabled]):hover:after {
+        transition-property: width;
+        width: 100%;
+        transition-duration: .8s;
+        transition-timing-function: ease-out; }
   .header--home .title {
     margin: 0 0 0 15.3%;
     position: absolute;
@@ -244,6 +260,9 @@ body {
             transform: translateX(-15px);
             color: rgba(34, 34, 34, 0.7);
             transition-duration: 0.5s; }
+          .menu--open .navigation .navigation__list li a:after {
+            visibility: hidden;
+            display: none; }
       .menu--open .navigation .burger__btn span {
         transition-duration: 0.5s;
         transform: rotate(-45deg);
@@ -518,7 +537,6 @@ body {
     padding: 0;
     list-style: none;
     margin-top: 4.09091em;
-    max-height: 26.59091em;
     display: grid;
     grid-gap: 1.36364em;
     grid-template-areas: "Milkbar GamePlace GetUp" "Milkbar Game4Game SportHub"; }
