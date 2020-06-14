@@ -22,6 +22,10 @@
         @include header-elem-width--pc(516px);
         top: calculation-size--pc(155px, $header-container-height);
         left: calculation-size--pc(-360px, $header-container-width);
+
+        @include phone-landscape {
+            display: none;
+        }
     }
 
     .leaf-2 {
@@ -35,6 +39,16 @@
         top: calculation-size--pc(115px, $header-container-height);
         right: calculation-size--pc(-270px, $header-container-width);
     }
+    
+    .leaf-4 {
+        @include header-elem-width--pc(169px);
+        bottom: calculation-size--pc(10px, $header-container-height);
+        left: calculation-size--pc(15px, $header-container-width);
+
+        @include phone-landscape {
+            display: none;
+        }
+    }
 
     .leaf-5 {
         @include header-elem-width--pc(84px);
@@ -46,12 +60,6 @@
         @include header-elem-width--pc(170px);
         bottom: calculation-size--pc(145px, $header-container-height);
         right: calculation-size--pc(-100px, $header-container-width);
-    }
-
-    .leaf-4 {
-        @include header-elem-width--pc(169px);
-        bottom: calculation-size--pc(10px, $header-container-height);
-        left: calculation-size--pc(15px, $header-container-width);
     }
 }
 

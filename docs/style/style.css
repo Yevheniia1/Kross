@@ -880,6 +880,9 @@ body {
   @media (max-width: 399px) {
     .header--home .decoration .leaf-1 {
       width: 88.35616%; } }
+  @media (max-width: 699px) {
+    .header--home .decoration .leaf-1 {
+      display: none; } }
 
 .header--home .decoration .leaf-2 {
   width: 4.93151%;
@@ -915,6 +918,26 @@ body {
     .header--home .decoration .leaf-3 {
       width: 59.24658%; } }
 
+.header--home .decoration .leaf-4 {
+  width: 11.57534%;
+  bottom: 1.15607%;
+  left: 1.0274%; }
+  @media (max-width: 1199px) {
+    .header--home .decoration .leaf-4 {
+      width: 13.89041%; } }
+  @media (max-width: 899px) {
+    .header--home .decoration .leaf-4 {
+      width: 17.36301%; } }
+  @media (max-width: 699px) {
+    .header--home .decoration .leaf-4 {
+      width: 23.15068%; } }
+  @media (max-width: 399px) {
+    .header--home .decoration .leaf-4 {
+      width: 28.93836%; } }
+  @media (max-width: 699px) {
+    .header--home .decoration .leaf-4 {
+      display: none; } }
+
 .header--home .decoration .leaf-5 {
   width: 5.75342%;
   bottom: 19.65318%;
@@ -948,23 +971,6 @@ body {
   @media (max-width: 399px) {
     .header--home .decoration .leaf-6 {
       width: 29.10959%; } }
-
-.header--home .decoration .leaf-4 {
-  width: 11.57534%;
-  bottom: 1.15607%;
-  left: 1.0274%; }
-  @media (max-width: 1199px) {
-    .header--home .decoration .leaf-4 {
-      width: 13.89041%; } }
-  @media (max-width: 899px) {
-    .header--home .decoration .leaf-4 {
-      width: 17.36301%; } }
-  @media (max-width: 699px) {
-    .header--home .decoration .leaf-4 {
-      width: 23.15068%; } }
-  @media (max-width: 399px) {
-    .header--home .decoration .leaf-4 {
-      width: 28.93836%; } }
 
 .testimonials .dots-3 {
   width: 6.0274%;
