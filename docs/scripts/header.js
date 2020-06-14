@@ -1,31 +1,42 @@
-import {createNewElements} from './script.js';
+import {createNewElements} from './helpers.js';
 
+async function createHeaderDecorations() {
+    const header = document.querySelector('.header--home'),
+          containerForDecorations = header.querySelector('.container>.decoration'),
+          classesOfDecorations = ['dots-1', 'dots-2', 'leaf-1', 'leaf-2', 'leaf-3',  'leaf-4', 'leaf-5', 'leaf-6'];
 
-const header = document.querySelector('.header--home'),
-      containerForDecorations = header.querySelector('.container>.decoration'),
-      containerAbout = document.querySelector('.about'),
-      classesOfDecorations = ['leaf-1', 'leaf-2', 'leaf-3', 'leaf-5', 'leaf-6', 'dots-1', 'dots-2'];
-
-//Создание декоративных элементов в header
-for(let value of classesOfDecorations){
+    //Создание декоративных элементов в header
+    for(let value of classesOfDecorations){
     let img = createNewElements(containerForDecorations, 'img', `${value}`)
     img.setAttribute('src', `./imgs/decorations/${value}.png`)
-}
-
-//Создание декоративных элементов в about
-(() => {
-    let img = createNewElements(containerAbout, 'img', 'leaf-4');
-    img.setAttribute('src', `./imgs/decorations/leaf-4.png`)
-})()
-
-const buttonBurger = document.querySelector('.burger__btn');
-
-buttonBurger.onclick = () => {
-    header.classList.toggle('menu--open');
-    
-    try {
-        containerAbout.querySelector('.leaf-4').classList.toggle('blur');
-    } catch(err) {
-        throw err
     }
 }
+
+// Полная сборка анимации в header
+
+async function runHeaderDecoration() {
+    try {
+        await createHeaderDecorations();
+        const headerDecorationElements = await import('./decorations.js');
+        const master = new TimelineMax();
+    
+        master.add(headerDecorationElements.leaf5())
+              .add(headerDecorationElements.leaf6())
+              .add(headerDecorationElements.leaf1())
+              .add(headerDecorationElements.leaf2(), '-=3')
+              .add(headerDecorationElements.leaf3(), '-=10')
+    } catch(err) {
+        console.log(err)
+    }
+}
+
+function openMobileNavigation() {
+    const buttonBurger = document.querySelector('.burger__btn'),
+          header = document.querySelector('.header--home');
+
+    buttonBurger.onclick = () => {
+        header.classList.toggle('menu--open');
+    }
+}
+
+export {openMobileNavigation, runHeaderDecoration}

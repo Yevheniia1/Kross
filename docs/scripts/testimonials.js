@@ -1,4 +1,4 @@
-import {createNewElements} from './script.js';
+import {createNewElements} from './helpers.js';
 
 const containerForDecorations = document.querySelector('.testimonials>.container>.decoration'),
       classesOfDecorations = ['leaf-2', 'leaf-4', 'leaf-5', 'dots-3', 'dots-4'];

@@ -76,12 +76,4 @@ function leaf6() {
     return tl
 }
 
-// Полная сборка анимации
-     
-const MASTER = new TimelineMax();
-
-MASTER.add(leaf5())
-      .add(leaf6())
-      .add(leaf1())
-      .add(leaf2(), '-=3')
-      .add(leaf3(), '-=10')
+export {leaf1, leaf2, leaf3, leaf5, leaf6};
