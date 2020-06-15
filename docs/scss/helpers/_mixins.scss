@@ -7,13 +7,13 @@
 @mixin font--primary($color: $black, $font-size: $font-size--base, $font-family: $font-primary){
     font-family: $font-family;
     color: $color;
-    font-size: $font-size;
+    font-size: em($font-size);
 }
 
 @mixin font--description($color: $black, $font-size: $font-size--xs, $font-family: $font-description){
     font-family: $font-family;
     color: $color;
-    font-size: $font-size;
+    font-size: em($font-size);
 }
 
 //Reset styles
@@ -81,7 +81,15 @@
 @mixin container {
 	width: calculation-size--pc($container-width, $start-layout-width);
 	max-width: $container-width;
-	margin: 0 auto;
+    margin: 0 auto;
+
+    @include phone-landscape{
+        width: 82%;
+    }
+    
+    @include phone-portrait{
+        width: 92%;
+    }
 }
 
 @mixin big-container {

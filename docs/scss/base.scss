@@ -1,6 +1,7 @@
 body {
 	font-size: $font-size--base;
 	margin: 0;
+	overflow-x: hidden;
 
 	@include desktop {
 		font-size: 18px;
@@ -15,11 +16,11 @@ body {
 	}
 
 	@include phone-landscape{
-		font-size: 12px;
+		font-size: 14px;
 	}
 
 	@include phone-portrait {
-		font-size: 10px;
+		font-size: 13px;
 	}
 }
 
@@ -38,8 +39,12 @@ body {
 
 .section-title {
 	margin: 0;
-	@include font($black, $font-size--xl, $font-title, bold);
+	@include font($black, em($font-size--xl), $font-title, bold);
 	text-align: center;
+
+	@include phone-portrait{
+		font-size: em($font-size--l);
+	}
 }
 
 .container {

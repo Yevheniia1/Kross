@@ -81,6 +81,10 @@
         transform: scale(-1);
         top: calculation-size--pc(255px, $header-container-height);
         right: calculation-size--pc(-360px, $header-container-width);
+
+        @include phone-landscape {
+            display: none;
+        }
     }
 
     .leaf-4 {
