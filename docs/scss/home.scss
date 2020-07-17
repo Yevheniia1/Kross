@@ -87,7 +87,7 @@
             display: block;
             position: relative;
 
-            @include font--primary($white, em($font-size--s));
+            @include font--primary($white, $font-size--s);
             text-transform: uppercase;
             line-height: 2.3;
             transition-duration: $transition-duration--base;
@@ -956,6 +956,10 @@
             
             .post__wrapper {
                 padding: em(20px) em(45px);
+
+                @include phone-landscape {
+                    padding: em(20px) em(15px);
+                }
             }
 
             .content {

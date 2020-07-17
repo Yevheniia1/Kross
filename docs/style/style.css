@@ -126,7 +126,7 @@ body {
       position: relative;
       font-family: "Playfair Display", serif;
       color: #ffffff;
-      font-size: 0.04132em;
+      font-size: 0.90909em;
       text-transform: uppercase;
       line-height: 2.3;
       transition-duration: 0.5s; }
@@ -893,6 +893,9 @@ body {
         max-width: 50%; }
       .blogs .blog__post:first-child .post__wrapper {
         padding: 0.90909em 2.04545em; }
+        @media (max-width: 699px) {
+          .blogs .blog__post:first-child .post__wrapper {
+            padding: 0.90909em 0.68182em; } }
       .blogs .blog__post:first-child .content {
         margin: 1.94444em 0 0; }
       .blogs .blog__post:first-child .category__link {

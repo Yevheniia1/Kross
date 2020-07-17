@@ -50,11 +50,11 @@ class Animation {
             tl.fromTo(elem, sec, {x: this.calculatePercentageOfHWidth(-33), y: `${this.calculatePercentageOfHeight(-41)}`, rotation: start_position}, {xPercent: -50, y: vertical_displacement, rotation: rl,ease: ease})
               .to(elem, sec, {xPercent: 30, y: vertical_displacement, rotation: rr,ease: ease})
               .to(elem, sec, {xPercent: -30, y: vertical_displacement, rotation: rl, ease: ease})
-              .to(elem, sec, {xPercent: 50, y: vertical_displacement, rotation: rr, ease: ease})
+              .to(elem, sec, {xPercent: 30, y: vertical_displacement, rotation: rr, ease: ease})
               .to(elem, sec, {xPercent: -30, y: vertical_displacement, rotation: rl, ease: ease})
               .to(elem, sec, {xPercent: 30, y: vertical_displacement, rotation: rr, ease: ease})
               .to(elem, sec, {xPercent: -30, y: vertical_displacement, rotation: rl, ease: ease})
-              .to(elem, sec, {xPercent: 50, y: vertical_displacement, rotation: rr, ease: ease})
+              .to(elem, sec, {xPercent: 30, y: vertical_displacement, rotation: rr, ease: ease})
               .to(elem, sec, {xPercent: -30, y: vertical_displacement, rotation: rl, opacity: 0, ease: ease})
         
               return tl;
